@@ -259,8 +259,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* line 172, ../sass/screen.scss */
   .events section:last-child {
     border: none; }
+  /* line 175, ../sass/screen.scss */
+  .events .view-all {
+    background-color: #8ECB91;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 5%;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 1em; }
+  /* line 184, ../sass/screen.scss */
+  .events .view-all:hover {
+    color: black; }
 
-  /* line 177, ../sass/screen.scss */
+  /* line 189, ../sass/screen.scss */
   footer {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -269,39 +287,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #2C3D6C;
-    padding: 2em 0; }
-  /* line 181, ../sass/screen.scss */
-  footer .layout {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto; }
-  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
-  footer .layout:after {
-    content: " ";
-    display: block;
-    clear: both; }
-  /* line 184, ../sass/screen.scss */
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #2C3D6C; }
+  /* line 193, ../sass/screen.scss */
   footer p {
+    margin-top: .5em;
+    float: left;
     color: white;
     line-height: 2em;
-    margin: 0 auto;
     font-family: "Ubuntu", sans-serif;
-    display: block; } }
+    font-size: .75em;
+    width: 50%;
+    min-width: 15em; }
+  /* line 204, ../sass/screen.scss */
+  footer span {
+    font-style: italic;
+    font-weight: bold; } }
 @media (min-width: 414px) {
-  /* line 195, ../sass/screen.scss */
+  /* line 212, ../sass/screen.scss */
   .slider {
     height: 18em; } }
 @media (min-width: 667px) {
-  /* line 203, ../sass/screen.scss */
+  /* line 220, ../sass/screen.scss */
   header {
     height: 10em;
     width: 100%;
     padding: 0; }
-  /* line 207, ../sass/screen.scss */
+  /* line 224, ../sass/screen.scss */
   header .layout {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -315,10 +328,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     content: " ";
     display: block;
     clear: both; }
-  /* line 211, ../sass/screen.scss */
+  /* line 228, ../sass/screen.scss */
   header img {
     height: 8em; }
-  /* line 214, ../sass/screen.scss */
+  /* line 231, ../sass/screen.scss */
   header h1 {
     color: white;
     font-family: "Open Sans Condensed", sans-serif;
@@ -330,15 +343,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     right: 0;
     margin-left: 40%;
     text-align: right; }
-  /* line 226, ../sass/screen.scss */
+  /* line 243, ../sass/screen.scss */
   header #navBug {
     display: none; }
 
-  /* line 230, ../sass/screen.scss */
+  /* line 247, ../sass/screen.scss */
   nav {
     background-color: #8ECB91;
     display: block; }
-  /* line 234, ../sass/screen.scss */
+  /* line 251, ../sass/screen.scss */
   nav li {
     width: auto;
     float: left;
@@ -346,17 +359,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-family: "Ubuntu", sans-serif;
     font-size: 1.2em;
     border: none; }
-  /* line 243, ../sass/screen.scss */
+  /* line 260, ../sass/screen.scss */
   nav li a {
     color: white;
     text-decoration: none; }
 
-  /* line 249, ../sass/screen.scss */
+  /* line 266, ../sass/screen.scss */
   .slider {
     width: 100%;
     height: 25em; }
 
-  /* line 255, ../sass/screen.scss */
+  /* line 272, ../sass/screen.scss */
   .news {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -366,7 +379,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 1.69492%;
     padding-left: 5%;
     padding-right: 0; }
-  /* line 260, ../sass/screen.scss */
+  /* line 277, ../sass/screen.scss */
   .news article img {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -374,7 +387,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 263, ../sass/screen.scss */
+  /* line 280, ../sass/screen.scss */
   .news article .summary {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -383,7 +396,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: right;
     margin-right: 0; }
 
-  /* line 269, ../sass/screen.scss */
+  /* line 286, ../sass/screen.scss */
   .events {
     margin-top: 0;
     -moz-box-sizing: border-box;
@@ -395,27 +408,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-left: 5%;
     padding-right: 5%;
     padding-left: 0; }
-  /* line 274, ../sass/screen.scss */
+  /* line 291, ../sass/screen.scss */
   .events h2 {
     margin-top: 1em;
     margin-bottom: 1em; }
-  /* line 278, ../sass/screen.scss */
+  /* line 295, ../sass/screen.scss */
   .events section {
     width: 90%;
     margin: 0 5%;
     margin-bottom: 1.5em;
     padding-bottom: 1.5em; }
-  /* line 283, ../sass/screen.scss */
+  /* line 300, ../sass/screen.scss */
   .events section .date {
     width: 33%; }
-  /* line 285, ../sass/screen.scss */
+  /* line 302, ../sass/screen.scss */
   .events section .date .date-day {
     font-size: 400%; }
-  /* line 288, ../sass/screen.scss */
+  /* line 305, ../sass/screen.scss */
   .events section .date .date-month {
     font-size: 1.5em; } }
 @media (min-width: 1224px) {
-  /* line 297, ../sass/screen.scss */
+  /* line 314, ../sass/screen.scss */
   .layout {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -429,14 +442,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: block;
     clear: both; }
 
-  /* line 300, ../sass/screen.scss */
+  /* line 317, ../sass/screen.scss */
   header {
     padding: 0; }
-  /* line 302, ../sass/screen.scss */
+  /* line 319, ../sass/screen.scss */
   header h1 {
     font-size: 2.5em; } }
 @media (min-width: 1500px) {
-  /* line 308, ../sass/screen.scss */
+  /* line 325, ../sass/screen.scss */
   .layout {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;

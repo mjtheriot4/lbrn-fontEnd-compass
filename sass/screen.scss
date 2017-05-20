@@ -172,21 +172,38 @@
     section:last-child {
       border: none;
     }
+    .view-all {
+      background-color: $secondary;
+      @include span(full);
+      padding: 0 5%;
+      text-align: center;
+      text-decoration: none;
+      font-family: $bodyFont;
+      margin-bottom: 1em;
+    }
+    .view-all:hover {
+      color: darken($primary, 30%);
+    }
   }
   //Footer Styles ------------>
   footer {
     @include span(full);
+    @include pad(5%);
     background-color: $primary;
-    padding: 2em 0;
-    .layout {
-      @include container(90%);
-    }
     p {
+      margin-top: .5em;
+      float: left;
       color: white;
       line-height: 2em;
-      margin: 0 auto;
       font-family: $bodyFont;
-      display: block;
+      font-size: .75em;
+      width: 50%;
+      min-width: 15em;
+
+    }
+    span {
+      font-style: italic;
+      font-weight: bold;
     }
   }
 } //Small Query------------------------------------------
