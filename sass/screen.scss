@@ -1,0 +1,314 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "partials/variables";
+@import "partials/grids";
+@import "breakpoint";
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:500,500i,700');
+
+
+@include susy-breakpoint($small, $susySmall) {
+  header {
+    @include pad(5%);
+    height: 7em;
+    background-color: $primary;
+    @include span(full);
+    position: relative;
+    img {
+      float:left;
+      margin:1em 0;
+      margin-top: 1em;
+      height: 5em;
+    }
+    #navBug {
+      float: right;
+    }
+    h1 {
+      display: none;
+    }
+  }
+  nav {
+    display: none;
+    background-color: $secondary;
+    @include pad(5%);
+    @include span(full);
+
+    li {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid white;
+      padding-top: 1em;
+      padding-bottom: 1em;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+    li:last-child {
+      border: none;
+    }
+  }
+  .slider {
+    @include pad(5%);
+    @include span(full);
+    height: 12em;
+    background-image: url("../images/surf.jpg");
+    background-size: cover;
+  }
+
+  //News Styles ------------>
+  .news {
+    @include pad(5%);
+    @include span(full);
+    h2 {
+      font-size: 2.5em;
+      font-family: $bodyFont;
+      color: $primary;
+      margin-top: 1em;
+      line-height: .5em
+
+    }
+    article {
+      img {
+        @include span(full);
+      }
+      h3 {
+        margin-top: .5em;
+        @include span (full);
+        font-family: $titleFont;
+        font-size: 2em;
+        line-height: 2em;
+      }
+      .summary {
+        @include span(full);
+        margin-top: 1em;
+        font-size: 1em;
+        line-height: 1.2em;
+        font-family: $bodyFont;
+        color: $primary;
+      }
+      a {
+        color: $secondary;
+        font-size: 1em;
+        font-family: $bodyFont;
+        float: right;
+        text-decoration: none;
+        //@include clearfix;
+      }
+      a:hover {
+        color: darken($secondary, 30%);
+      }
+    }
+    .view-all {
+      @include span(full);
+      background-color: $primary;
+      margin:.5em 0;
+      padding-top: .5em;
+      padding-bottom: .5em;
+      a {
+        text-align: center;
+        padding: 0;
+      }
+    }
+  }
+  //Events Styles ------------>
+  .events {
+    margin-top: 2em;
+    @include span(full);
+    @include pad(5%);
+    background-color: $secondary;
+    h2 {
+      font-size: 2.5em;
+      font-family: $bodyFont;
+      color: $primary;
+      margin: 1em 0;
+      text-align: center;
+      line-height: .5em;
+    }
+    section {
+      // @include span(full);
+      // @include squish(10%);
+      float:left;
+      width: 70%;
+      margin: 0 15%;
+      border-bottom: 1px solid $primary;
+      margin-bottom: 4%;
+      padding-bottom: 4%;
+      .date {
+        width: 33%;
+        float: left;
+        border-right: 1px solid $primary;
+        font-family: $bodyFont;
+        color: $primary;
+        .date-day {
+          font-weight: 500;
+          font-size: 400%;
+          text-align: center;
+        }
+        .date-month {
+          font-size: 1.2em;
+          text-transform: uppercase;
+          text-align: center;
+        }
+      }
+      .details {
+        width: 62%;
+        float: right;
+        font-family: $bodyFont;
+        color: $primary;
+        .date-time {
+          font-weight: bold;
+        }
+      }
+    }
+    section:last-child {
+      border: none;
+    }
+  }
+  //Footer Styles ------------>
+  footer {
+    @include span(full);
+    background-color: $primary;
+    padding: 2em 0;
+    .layout {
+      @include container(90%);
+    }
+    p {
+      color: white;
+      line-height: 2em;
+      margin: 0 auto;
+      font-family: $bodyFont;
+      display: block;
+    }
+  }
+} //Small Query------------------------------------------
+@include susy-breakpoint($medium, $susySmall) {
+  // Main Styles!!
+  .slider {
+    height: 18em;
+  }
+} //Medium Query------------------------------------------
+@include susy-breakpoint($standard, $susy) {
+
+  // Main Styles!!
+
+  header {
+    height: 10em;
+    width: 100%;
+    padding: 0;
+    .layout {
+      @include container(90%);
+      position: relative;
+    }
+    img {
+      height: 8em;
+    }
+    h1 {
+      color: white;
+      font-family: $titleFont;
+      font-weight: 700;
+      font-size: 2em;
+      display: block;
+      position: absolute;
+      bottom: .75em;
+      right: 0;
+      margin-left: 40%;
+      text-align: right;
+    }
+    #navBug {
+    display: none;
+    }
+  }
+  nav {
+    background-color: $secondary;
+    display: block;
+
+    li {
+      // @include span(1);
+      width: auto;
+      float: left;
+      margin-right: 2em;
+      font-family: $bodyFont;
+      font-size: 1.2em;
+      border: none;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+  .slider {
+    width: 100%;
+    height: 25em;
+  }
+
+  //News Styles ------------>
+  .news {
+    @include span(7);
+    @include prefix(5%);
+    padding-right: 0;
+    article {
+      img {
+        @include span(4);
+      }
+      .summary {
+        @include span(8 at 5);
+      }
+    }
+  }
+  //Events Styles ------------>
+  .events {
+    margin-top: 0;
+    @include span(last 5);
+    @include pad(5%);
+    padding-left: 0;
+    h2 {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    section {
+      width: 90%;
+      margin: 0 5%;
+      margin-bottom:1.5em;
+      padding-bottom: 1.5em;
+      .date {
+        width: 33%;
+        .date-day {
+          font-size: 400%;
+        }
+        .date-month {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+} // Standard Query ----------------------------------------
+@include breakpoint($large) {
+  // Main Styles!!
+  .layout {
+    @include container(80%);
+  }
+  header {
+    padding: 0;
+    h1 {
+      font-size: 2.5em;
+    }
+  }
+} // large Query ----------------------------------------
+@include breakpoint($highDef) {
+  .layout {
+    @include container(65%);
+  }
+} // large Query ----------------------------------------
+
+
+// TEMPORARY:  Testing purposes only----------------------
