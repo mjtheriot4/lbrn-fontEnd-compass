@@ -31,8 +31,21 @@ header, main, aside, body, ul, li, div, html, h1, h2, {
   padding: 0;
 }
 header {
-  height: 7em;
   background-color: lightGreen;
+  h1 {
+    margin: 1em 0 .5em 0;
+  }
+}
+nav {
+  height: 3em;
+  background-color: seagreen;
+  ul {
+    li {
+      float:left;
+      list-style: none;
+      margin: 1em 3em 1em 0;
+    }
+  }
 }
 main {
   min-height: 30em;
@@ -51,30 +64,25 @@ footer {
 }
 
 @include susy-breakpoint($medium, $susyMedium){
-  .layout {
-    @include container(100%);
-  }
   header {
     @include span(full);
-    @include pad(gutters());
+  }
+  nav {
+    display: none;
   }
   main {
     @include span(full);
-    @include pad(gutter());
   }
   aside {
     @include span(full);
-    @include pad(gutter());
   }
   footer {
     @include span(full);
-    @include pad(gutter());
   }
 }
 @include susy-breakpoint($standard, $susy){
   header {
     @include span(full);
-    padding: 0 10%;
 
   }
   main {
