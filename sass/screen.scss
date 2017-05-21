@@ -15,6 +15,9 @@
 
 
 @include susy-breakpoint($small, $susySmall) {
+  .layout {
+    @include container(100%);
+  }
   header {
     @include pad(5%);
     height: 7em;

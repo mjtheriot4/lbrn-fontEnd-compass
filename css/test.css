@@ -1,49 +1,38 @@
-/* line 29, ../sass/test.scss */
 header, main, aside, body, ul, li, div, html, h1, h2 {
   margin: 0;
   padding: 0; }
 
-/* line 33, ../sass/test.scss */
 header {
   background-color: lightGreen; }
-/* line 35, ../sass/test.scss */
 header h1 {
   margin: 1em 0 .5em 0; }
 
-/* line 39, ../sass/test.scss */
 nav {
   height: 3em;
   background-color: seagreen; }
-/* line 43, ../sass/test.scss */
 nav ul li {
   float: left;
   list-style: none;
   margin: 1em 3em 1em 0; }
 
-/* line 50, ../sass/test.scss */
 main {
   min-height: 30em;
   background-color: lightGrey; }
 
-/* line 54, ../sass/test.scss */
 aside {
   background-color: lightBlue; }
-/* line 56, ../sass/test.scss */
 aside li {
   height: 5em;
   list-style: none; }
 
-/* line 58, ../sass/test.scss */
 body {
   background-color: darkGrey; }
 
-/* line 61, ../sass/test.scss */
 footer {
   background-color: darkBlue;
   color: white; }
 
 @media (min-width: 414px) {
-  /* line 67, ../sass/test.scss */
   header {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -53,11 +42,9 @@ footer {
     padding-left: 2.77778%;
     padding-right: 2.77778%; }
 
-  /* line 70, ../sass/test.scss */
   nav {
     display: none; }
 
-  /* line 73, ../sass/test.scss */
   main {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -67,7 +54,6 @@ footer {
     padding-left: 2.77778%;
     padding-right: 2.77778%; }
 
-  /* line 76, ../sass/test.scss */
   aside {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -77,7 +63,6 @@ footer {
     padding-left: 2.77778%;
     padding-right: 2.77778%; }
 
-  /* line 79, ../sass/test.scss */
   footer {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -87,7 +72,6 @@ footer {
     padding-left: 2.77778%;
     padding-right: 2.77778%; } }
 @media (min-width: 667px) {
-  /* line 84, ../sass/test.scss */
   header {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -97,7 +81,6 @@ footer {
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 88, ../sass/test.scss */
   main {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -106,7 +89,6 @@ footer {
     float: left;
     margin-right: 2.12766%; }
 
-  /* line 91, ../sass/test.scss */
   aside {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -115,7 +97,6 @@ footer {
     float: right;
     margin-right: 0; } }
 @media (min-width: 1224px) {
-  /* line 96, ../sass/test.scss */
   .layout {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -123,7 +104,6 @@ footer {
     max-width: 85%;
     margin-left: auto;
     margin-right: auto; }
-  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
   .layout:after {
     content: " ";
     display: block;
