@@ -1,6 +1,6 @@
 <h1>LBRN New Website Project Front-End Development Assets</h1>
-Project Overview:
-This repository is used to share the front-end resources for the currently "under construction" Louisiana Biomedical Research Network website (new as of Summer 2017).
+<h2>Project Overview:</h2>
+<p>This repository is used to share the front-end resources for the currently "under construction" Louisiana Biomedical Research Network website (new as of Summer 2017).</p>
 
 <h2>Technologies Used:</h2>
 <p>All deliverables are to be rendered in HTML, CSS, and Javascript. That said, the project takes advantage of a number of frameworks to render these deliverables quickly.
