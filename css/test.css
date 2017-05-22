@@ -4,16 +4,13 @@ header, main, aside, body, ul, li, div, html, h1, h2 {
 
 header {
   background-color: lightGreen; }
-header h1 {
-  margin: 1em 0 .5em 0; }
 
 nav {
   height: 3em;
   background-color: seagreen; }
 nav ul li {
   float: left;
-  list-style: none;
-  margin: 1em 3em 1em 0; }
+  list-style: none; }
 
 main {
   min-height: 30em;
@@ -39,10 +36,17 @@ footer {
     box-sizing: border-box;
     width: 100%;
     float: left;
-    padding-left: 2.77778%;
-    padding-right: 2.77778%; }
+    padding-left: 2.08333%;
+    padding-right: 2.08333%; }
 
   nav {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 2.08333%;
+    padding-right: 2.08333%;
     display: none; }
 
   main {
@@ -51,8 +55,8 @@ footer {
     box-sizing: border-box;
     width: 100%;
     float: left;
-    padding-left: 2.77778%;
-    padding-right: 2.77778%; }
+    padding-left: 2.08333%;
+    padding-right: 2.08333%; }
 
   aside {
     -moz-box-sizing: border-box;
@@ -60,8 +64,8 @@ footer {
     box-sizing: border-box;
     width: 100%;
     float: left;
-    padding-left: 2.77778%;
-    padding-right: 2.77778%; }
+    padding-left: 2.08333%;
+    padding-right: 2.08333%; }
 
   footer {
     -moz-box-sizing: border-box;
@@ -69,8 +73,8 @@ footer {
     box-sizing: border-box;
     width: 100%;
     float: left;
-    padding-left: 2.77778%;
-    padding-right: 2.77778%; } }
+    padding-left: 2.08333%;
+    padding-right: 2.08333%; } }
 @media (min-width: 667px) {
   header {
     -moz-box-sizing: border-box;
@@ -81,19 +85,21 @@ footer {
     margin-left: 0;
     margin-right: 0; }
 
+  nav {
+    display: block; }
+
   main {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 65.95745%;
-    float: left;
-    margin-right: 2.12766%; }
+    width: 66.10169%;
+    float: left; }
 
   aside {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 31.91489%;
+    width: 32.20339%;
     float: right;
     margin-right: 0; } }
 @media (min-width: 1224px) {

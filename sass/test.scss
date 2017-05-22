@@ -4,20 +4,20 @@
 //Declaring variables
 $susy: (
   columns: 12,
-  gutters: 1/3,
+  gutters: 1/4,
   box-sizing: border-box,
+  gutter-override: no-gutters
 );
 $susySmall: (
-  columns: 6,
-  gutters: 1/3,
-  gutter-position: inside,
-  box-sizing: border-box,
+  columns: 3,
+  gutters: 1,
+  gutter-position: inside
 );
 $susyMedium: (
-  columns: 6,
-  gutters: 1/2,
+  columns: 3,
+  gutters:1,
   gutter-position: inside,
-  box-sizing: border-box,
+  gutter-override: (12)
 );
 
 $large: 1224px;
@@ -32,9 +32,6 @@ header, main, aside, body, ul, li, div, html, h1, h2, {
 }
 header {
   background-color: lightGreen;
-  h1 {
-    margin: 1em 0 .5em 0;
-  }
 }
 nav {
   height: 3em;
@@ -43,7 +40,6 @@ nav {
     li {
       float:left;
       list-style: none;
-      margin: 1em 3em 1em 0;
     }
   }
 }
@@ -68,6 +64,7 @@ footer {
     @include span(full);
   }
   nav {
+    @include span(full);
     display: none;
   }
   main {
@@ -84,6 +81,9 @@ footer {
   header {
     @include span(full);
 
+  }
+  nav {
+    display: block;
   }
   main {
     @include span(8);

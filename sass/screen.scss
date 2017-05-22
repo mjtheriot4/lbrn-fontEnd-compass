@@ -33,6 +33,9 @@
     #navBug {
       float: right;
     }
+    #navBug:hover {
+      cursor: pointer;
+    }
     h1 {
       display: none;
     }
