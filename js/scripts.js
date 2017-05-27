@@ -8,7 +8,9 @@ $( document ).ready(function() {
       else {$(this).attr("src", "images/menuOpen.png")}
   });
   $("body > div.layout").click(function(){
+    if ($('#navBug').css('display') != 'none'){
       $('nav').slideUp('fast');
       $('#navBug').attr("src", "images/menuClosed.png")
+    }
   });
 });
