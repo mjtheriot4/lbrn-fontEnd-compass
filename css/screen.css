@@ -126,7 +126,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background-image: url("../images/surf.jpg");
     background-size: cover; }
 
-  .news {
+  #newsContainer {
     padding-left: 5%;
     padding-right: 5%;
     -moz-box-sizing: border-box;
@@ -136,6 +136,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-left: 0;
     margin-right: 0; }
+
+  #newsPageContainer {
+    padding-left: 5%;
+    padding-right: 5%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+
   .news h2 {
     font-size: 2.5em;
     font-family: "Ubuntu", sans-serif;
@@ -343,7 +355,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 100%;
     height: 25em; }
 
-  .news {
+  #newsContainer {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -352,6 +364,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 1.69492%;
     padding-left: 5%;
     padding-right: 0; }
+
   .news article img {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;

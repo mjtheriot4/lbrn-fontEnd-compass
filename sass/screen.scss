@@ -71,11 +71,16 @@
     background-image: url("../images/surf.jpg");
     background-size: cover;
   }
-
   //News Styles ------------>
-  .news {
+  #newsContainer {
     @include pad(5%);
     @include span(full);
+  }
+  #newsPageContainer {
+    @include pad(5%);
+    @include span(full);
+  }
+  .news {
     h2 {
       font-size: 2.5em;
       font-family: $bodyFont;
@@ -278,10 +283,12 @@
   }
 
   //News Styles ------------>
-  .news {
+  #newsContainer {
     @include span(7);
     @include prefix(5%);
     padding-right: 0;
+  }
+  .news {
     article {
       img {
         @include span(4);
@@ -338,3 +345,8 @@
 
 
 // TEMPORARY:  Testing purposes only----------------------
+
+
+
+//------------------------------------------------------------------------------
+@import "partials/events-page";
