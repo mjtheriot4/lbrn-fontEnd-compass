@@ -71,6 +71,18 @@
     background-image: url("../images/surf.jpg");
     background-size: cover;
   }
+  .page-heading{
+    padding-left:5%;
+    padding-right:5%;
+    h1 {
+     margin-top: .75em;
+     margin-bottom: .75em;
+     float: left;
+     font-size: 3em;
+     font-family: $bodyFont;
+     color: $primary;
+    }
+  }
   //News Styles ------------>
   #newsContainer {
     @include pad(5%);
@@ -113,6 +125,9 @@
         font-size: 1em;
         font-family: $bodyFont;
         float: right;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: right;
         text-decoration: none;
         //@include clearfix;
       }
@@ -132,7 +147,13 @@
       }
     }
   }
+  #newsSidebar {
+    display: none;
+  }
   //Events Styles ------------>
+  #eventsPage {
+    @include span(full);
+  }
   .events {
     margin-top: 2em;
     @include span(full);
@@ -187,6 +208,7 @@
     }
     .view-all {
       background-color: $secondary;
+      color: $primary;
       @include span(full);
       padding: 0 5%;
       text-align: center;
@@ -288,13 +310,47 @@
     @include prefix(5%);
     padding-right: 0;
   }
+  #newsPageContainer{
+    @include span(9);
+  }
   .news {
     article {
+      &.spacers {
+        @include span(full);
+          margin-bottom: 1.5em;
+      }
+      .sideTitle {
+        @include span(8 at 5);
+        font-size: 2em;
+        line-height: 1em;
+        margin-top: 0;
+        padding-top: 0;
+      }
       img {
         @include span(4);
       }
       .summary {
-        @include span(8 at 5);
+        margin-top: 0;
+        @include span(last 8);
+      }
+      a {
+        @include span(last 8);
+      }
+    }
+  }
+  #newsSidebar {
+    display: block;
+    @include span(last 3);
+    ul {
+      border: 1px solid $secondary;
+      li {
+        font-family: $bodyFont;
+        color: $primary;
+        text-align: center;
+        padding: .5em 0;
+      }
+      li:nth-child(2n){
+        background-color: lighten($secondary, 15);
       }
     }
   }
@@ -349,4 +405,3 @@
 
 
 //------------------------------------------------------------------------------
-@import "partials/events-page";

@@ -126,6 +126,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background-image: url("../images/surf.jpg");
     background-size: cover; }
 
+  .page-heading {
+    padding-left: 5%;
+    padding-right: 5%; }
+  .page-heading h1 {
+    margin-top: .75em;
+    margin-bottom: .75em;
+    float: left;
+    font-size: 3em;
+    font-family: "Ubuntu", sans-serif;
+    color: #2C3D6C; }
+
   #newsContainer {
     padding-left: 5%;
     padding-right: 5%;
@@ -192,6 +203,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 1em;
     font-family: "Ubuntu", sans-serif;
     float: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: right;
     text-decoration: none; }
   .news article a:hover {
     color: #3d8340; }
@@ -210,6 +224,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .news .view-all a {
     text-align: center;
     padding: 0; }
+
+  #newsSidebar {
+    display: none; }
+
+  #eventsPage {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
 
   .events {
     margin-top: 2em;
@@ -262,6 +288,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border: none; }
   .events .view-all {
     background-color: #8ECB91;
+    color: #2C3D6C;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -365,6 +392,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-left: 5%;
     padding-right: 0; }
 
+  #newsPageContainer {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 74.57627%;
+    float: left;
+    margin-right: 1.69492%; }
+
+  .news article.spacers {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.5em; }
+  .news article .sideTitle {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.10169%;
+    float: right;
+    margin-right: 0;
+    font-size: 2em;
+    line-height: 1em;
+    margin-top: 0;
+    padding-top: 0; }
   .news article img {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -373,12 +428,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-right: 1.69492%; }
   .news article .summary {
+    margin-top: 0;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 66.10169%;
     float: right;
     margin-right: 0; }
+  .news article a {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.10169%;
+    float: right;
+    margin-right: 0; }
+
+  #newsSidebar {
+    display: block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 23.72881%;
+    float: right;
+    margin-right: 0; }
+  #newsSidebar ul {
+    border: 1px solid #8ECB91; }
+  #newsSidebar ul li {
+    font-family: "Ubuntu", sans-serif;
+    color: #2C3D6C;
+    text-align: center;
+    padding: .5em 0; }
+  #newsSidebar ul li:nth-child(2n) {
+    background-color: #c2e3c4; }
 
   .events {
     margin-top: 0;
