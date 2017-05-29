@@ -315,6 +315,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-left: 5%;
     padding-right: 5%;
     background-color: #2C3D6C; }
+  footer .layout {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em; }
   footer p {
     margin-top: .5em;
     float: left;
@@ -461,6 +464,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #newsSidebar ul li:nth-child(2n) {
     background-color: #c2e3c4; }
 
+  #eventsContainer {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: white; }
+
   .events {
     margin-top: 0;
     -moz-box-sizing: border-box;
@@ -493,7 +506,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     box-sizing: border-box;
     max-width: 80%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding: 0; }
   .layout:after {
     content: " ";
     display: block;
@@ -501,14 +515,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   header {
     padding: 0; }
+  header .layout {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+  header .layout:after {
+    content: " ";
+    display: block;
+    clear: both; }
   header h1 {
-    font-size: 2.5em; } }
+    font-size: 2.5em; }
+
+  nav {
+    padding: 0; }
+
+  footer {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; } }
 @media (min-width: 1500px) {
   .layout {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    max-width: 65%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto; }
   .layout:after {
