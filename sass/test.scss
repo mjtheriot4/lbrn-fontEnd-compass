@@ -4,9 +4,8 @@
 //Declaring variables
 $susy: (
   columns: 12,
-  gutters: 1/4,
-  box-sizing: border-box,
-  gutter-override: no-gutters
+  gutters: 1/2,
+  gutter-postion: after
 );
 $susySmall: (
   columns: 3,
@@ -15,9 +14,8 @@ $susySmall: (
 );
 $susyMedium: (
   columns: 3,
-  gutters:1,
-  gutter-position: inside,
-  gutter-override: (12)
+  gutters:.5,
+  gutter-position: inside
 );
 
 $large: 1224px;
@@ -77,16 +75,29 @@ footer {
     @include span(full);
   }
 }
-@include susy-breakpoint($standard, $susy){
+@include breakpoint($standard){
+    @include layout($susy, clean);
   header {
     @include span(full);
-
   }
   nav {
     display: block;
   }
   main {
     @include span(8);
+  }
+  .three-columns {
+    @include span(full);
+    background-color: grey;
+    section{
+      background-color: lightBlue;
+      @include span(4);
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+    section:nth-child(3n) {
+      @include span(last 4);
+    }
   }
   aside {
     @include span(last 4);

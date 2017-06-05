@@ -36,8 +36,8 @@ footer {
     box-sizing: border-box;
     width: 100%;
     float: left;
-    padding-left: 2.08333%;
-    padding-right: 2.08333%; }
+    padding-left: 5.55556%;
+    padding-right: 5.55556%; }
 
   nav {
     -moz-box-sizing: border-box;
@@ -45,8 +45,8 @@ footer {
     box-sizing: border-box;
     width: 100%;
     float: left;
-    padding-left: 2.08333%;
-    padding-right: 2.08333%;
+    padding-left: 5.55556%;
+    padding-right: 5.55556%;
     display: none; }
 
   main {
@@ -55,8 +55,8 @@ footer {
     box-sizing: border-box;
     width: 100%;
     float: left;
-    padding-left: 2.08333%;
-    padding-right: 2.08333%; }
+    padding-left: 5.55556%;
+    padding-right: 5.55556%; }
 
   aside {
     -moz-box-sizing: border-box;
@@ -64,8 +64,8 @@ footer {
     box-sizing: border-box;
     width: 100%;
     float: left;
-    padding-left: 2.08333%;
-    padding-right: 2.08333%; }
+    padding-left: 5.55556%;
+    padding-right: 5.55556%; }
 
   footer {
     -moz-box-sizing: border-box;
@@ -73,13 +73,10 @@ footer {
     box-sizing: border-box;
     width: 100%;
     float: left;
-    padding-left: 2.08333%;
-    padding-right: 2.08333%; } }
+    padding-left: 5.55556%;
+    padding-right: 5.55556%; } }
 @media (min-width: 667px) {
   header {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     width: 100%;
     float: left;
     margin-left: 0;
@@ -89,24 +86,34 @@ footer {
     display: block; }
 
   main {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 66.10169%;
-    float: left; }
+    width: 65.71429%;
+    float: left;
+    margin-right: 2.85714%; }
+
+  .three-columns {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: grey; }
+  .three-columns section {
+    background-color: lightBlue;
+    width: 31.42857%;
+    float: left;
+    margin-right: 2.85714%;
+    margin-bottom: 1em;
+    margin-top: 1em; }
+  .three-columns section:nth-child(3n) {
+    width: 31.42857%;
+    float: right;
+    margin-right: 0; }
 
   aside {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 32.20339%;
+    width: 31.42857%;
     float: right;
     margin-right: 0; } }
 @media (min-width: 1224px) {
   .layout {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     max-width: 85%;
     margin-left: auto;
     margin-right: auto; }

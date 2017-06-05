@@ -13,4 +13,10 @@ $( document ).ready(function() {
       $('#navBug').attr("src", "images/menuClosed.png")
     }
   });
+  $(window).resize(function(){
+    if ($('#navBug').css('display') == 'none'){
+      $('nav').css('display','block');
+    }
+    else {$('nav').css('display','none')}
+  });
 });

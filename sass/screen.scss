@@ -220,6 +220,49 @@
       color: darken($primary, 30%);
     }
   }
+  .lbrn-event-wrapper {
+    @include span(full);
+    margin-bottom: 2%;
+    section {
+      background-color: lighten($secondary, 25%);
+      @include span(90%);
+      margin:2% 5% 0 5%;
+      min-height: 35em;
+      position: relative;
+      img {
+        @include span(full);
+        width: 100%;
+      }
+      h2 {
+        @include span(95%);
+        padding: 2.5%;
+        font-size: 2.25em;
+        line-height: 1.5em;
+        color: $primary;
+        font-family: $titleFont;
+      }
+      p {
+        @include span(95%);
+        padding: 2.5%;
+        color: $primary;
+        font-family: $bodyFont;
+        line-height: 1.25em;
+        &.more {
+          @include span(full);
+          background-color: lighten($secondary, 15%);
+          text-align: center;
+          text-transform: capitalize;
+          padding-top: .5em;
+          padding-bottom: .5em;
+          position: absolute;
+          bottom:0;
+        }
+        &.more:hover {
+          color: lighten($primary, 20%);
+        }
+      }
+    }
+  }
   //Footer Styles ------------>
   footer {
     @include span(full);
@@ -255,7 +298,6 @@
 @include susy-breakpoint($standard, $susy) {
 
   // Main Styles!!
-
   header {
     height: 10em;
     width: 100%;
@@ -388,10 +430,44 @@
       }
     }
   }
+  .lbrn-event-wrapper {
+    @include span(90%);
+    margin-left: 5%;
+    margin-right: 5%;
+
+
+    section {
+      margin-left: 0;
+      margin-right: 0;
+      @include span(6);
+    }
+    section:nth-child(2n) {
+      @include span(last 6);
+    }
+  }
 } // Standard Query ----------------------------------------
+@include breakpoint($intermediate) {
+  .lbrn-event-wrapper {
+    @include span(90%);
+    margin-left: 5%;
+    margin-right: 5%;
+    section {
+      margin-left: 0;
+      margin-right: 0;
+      @include span(4);
+    }
+    section:nth-child(2n) {
+      @include span(4);
+    }
+    section:nth-child(3n) {
+      @include span(last 4);
+    }
+  }
+}// Intermediate Query ------------------------------------
 @include breakpoint($large) {
   // Main Styles!!
   .layout {
+    margin: 0;
     @include container(80%);
     padding: 0;
   }
@@ -404,10 +480,15 @@
       font-size: 2.5em;
     }
   }
+  .lbrn-event-wrapper {
+    margin: 0;
+    @include span(full);
+  }
   nav {
     padding: 0;
   }
   footer {
+    padding: 0;
     @include span(full);
   }
 } // large Query ----------------------------------------
