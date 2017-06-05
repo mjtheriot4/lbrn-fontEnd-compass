@@ -106,11 +106,13 @@
         @include span(full);
       }
       h3 {
-        margin-top: .5em;
+        margin-top: .75em;
+        margin-bottom: .25em;
         @include span (full);
         font-family: $titleFont;
         font-size: 2em;
-        line-height: 2em;
+        line-height: 1.25em;
+
       }
       .summary {
         @include span(full);

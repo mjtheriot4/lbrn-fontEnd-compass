@@ -174,7 +174,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 0;
     margin-right: 0; }
   .news article h3 {
-    margin-top: .5em;
+    margin-top: .75em;
+    margin-bottom: .25em;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -184,7 +185,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 0;
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 2em;
-    line-height: 2em; }
+    line-height: 1.25em; }
   .news article .summary {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -459,9 +460,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 57.62712%;
+    width: 57.14286%;
     float: left;
-    margin-right: 1.69492%;
+    margin-right: 2.85714%;
     padding-left: 5%;
     padding-right: 0; }
 
@@ -469,9 +470,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 74.57627%;
+    width: 74.28571%;
     float: left;
-    margin-right: 1.69492%; }
+    margin-right: 2.85714%; }
 
   .news article.spacers {
     -moz-box-sizing: border-box;
@@ -486,7 +487,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 66.10169%;
+    width: 65.71429%;
     float: right;
     margin-right: 0;
     font-size: 2em;
@@ -497,22 +498,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 32.20339%;
+    width: 31.42857%;
     float: left;
-    margin-right: 1.69492%; }
+    margin-right: 2.85714%; }
   .news article .summary {
     margin-top: 0;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 66.10169%;
+    width: 65.71429%;
     float: right;
     margin-right: 0; }
   .news article a {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 66.10169%;
+    width: 65.71429%;
     float: right;
     margin-right: 0; }
 
@@ -521,7 +522,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 23.72881%;
+    width: 22.85714%;
     float: right;
     margin-right: 0; }
   #newsSidebar ul {
@@ -549,7 +550,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 40.67797%;
+    width: 40%;
     float: right;
     margin-right: 0;
     padding-left: 5%;
@@ -576,7 +577,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     box-sizing: border-box;
     width: 90%;
     float: left;
-    margin-right: 1.69492%;
+    margin-right: 2.85714%;
     margin-left: 5%;
     margin-right: 5%; }
   .lbrn-event-wrapper section {
@@ -585,14 +586,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 49.15254%;
+    width: 48.57143%;
     float: left;
-    margin-right: 1.69492%; }
+    margin-right: 2.85714%; }
   .lbrn-event-wrapper section:nth-child(2n) {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 49.15254%;
+    width: 48.57143%;
     float: right;
     margin-right: 0; } }
 @media (min-width: 860px) {
@@ -602,7 +603,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     box-sizing: border-box;
     width: 90%;
     float: left;
-    margin-right: 1.69492%;
+    margin-right: 2.85714%;
     margin-left: 5%;
     margin-right: 5%; }
   .lbrn-event-wrapper section {
@@ -611,21 +612,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 32.20339%;
+    width: 31.42857%;
     float: left;
-    margin-right: 1.69492%; }
+    margin-right: 2.85714%; }
   .lbrn-event-wrapper section:nth-child(2n) {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 32.20339%;
+    width: 31.42857%;
     float: left;
-    margin-right: 1.69492%; }
+    margin-right: 2.85714%; }
   .lbrn-event-wrapper section:nth-child(3n) {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 32.20339%;
+    width: 31.42857%;
     float: right;
     margin-right: 0; } }
 @media (min-width: 1224px) {
