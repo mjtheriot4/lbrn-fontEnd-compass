@@ -15,6 +15,9 @@
 
 
 @include susy-breakpoint($small, $susySmall) {
+  main.layout {
+    min-height: 40em;
+  }
   .layout {
     @include container(100%);
   }
@@ -229,7 +232,7 @@
       background-color: lighten($secondary, 25%);
       @include span(90%);
       margin:2% 5% 0 5%;
-      min-height: 35em;
+      min-height: 38em;
       position: relative;
       img {
         @include span(full);
@@ -238,8 +241,8 @@
       h2 {
         @include span(95%);
         padding: 2.5%;
-        font-size: 2.25em;
-        line-height: 1.5em;
+        font-size: 2.1em;
+        line-height: 1.2em;
         color: $primary;
         font-family: $titleFont;
       }
@@ -262,6 +265,32 @@
         &.more:hover {
           color: lighten($primary, 20%);
         }
+      }
+    }
+  }
+  #lbrnEventHeader {
+    img {
+      @include span(full);
+      width: 100%;
+      height: none;
+    }
+    div.caption{
+      @include span(full);
+      background-color: $secondary;
+      @include pad(5%);
+      padding-top: 1.5em;
+      padding-bottom: 2em;
+      h1 {
+        font-size: 3em;
+        line-height: 1.2em;
+        font-family: $titleFont;
+        color: $primary;
+      }
+      p {
+        font-size: 1.2em;
+        font-family: $bodyFont;
+        color: $primary;
+        margin-top: .5em;
       }
     }
   }
@@ -445,6 +474,28 @@
     }
     section:nth-child(2n) {
       @include span(last 6);
+    }
+  }
+  #lbrnEventHeader {
+    background-color: $secondary;
+    img {
+      @include span(last 6);
+    }
+    div.caption{
+      @include span(6);
+      min-height: 100%;
+      h1 {
+        font-size: 3em;
+        line-height: 1.2em;
+        font-family: $titleFont;
+        color: $primary;
+      }
+      p {
+        font-size: 1.2em;
+        font-family: $bodyFont;
+        color: $primary;
+        margin-top: .5em;
+      }
     }
   }
 } // Standard Query ----------------------------------------

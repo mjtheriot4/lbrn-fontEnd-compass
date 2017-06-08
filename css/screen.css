@@ -40,6 +40,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block; }
 
 @media (min-width: 0) {
+  main.layout {
+    min-height: 40em; }
+
   .layout {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -323,7 +326,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-right: 3.44828%;
     margin: 2% 5% 0 5%;
-    min-height: 35em;
+    min-height: 38em;
     position: relative; }
   .lbrn-event-wrapper section img {
     -moz-box-sizing: border-box;
@@ -342,8 +345,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-right: 3.44828%;
     padding: 2.5%;
-    font-size: 2.25em;
-    line-height: 1.5em;
+    font-size: 2.1em;
+    line-height: 1.2em;
     color: #2C3D6C;
     font-family: "Open Sans Condensed", sans-serif; }
   .lbrn-event-wrapper section p {
@@ -374,6 +377,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     bottom: 0; }
   .lbrn-event-wrapper section p.more:hover {
     color: #4a66b4; }
+
+  #lbrnEventHeader img {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: none; }
+  #lbrnEventHeader div.caption {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #8ECB91;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1.5em;
+    padding-bottom: 2em; }
+  #lbrnEventHeader div.caption h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #2C3D6C; }
+  #lbrnEventHeader div.caption p {
+    font-size: 1.2em;
+    font-family: "Ubuntu", sans-serif;
+    color: #2C3D6C;
+    margin-top: .5em; }
 
   footer {
     -moz-box-sizing: border-box;
@@ -595,7 +632,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     box-sizing: border-box;
     width: 48.57143%;
     float: right;
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  #lbrnEventHeader {
+    background-color: #8ECB91; }
+  #lbrnEventHeader img {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 48.57143%;
+    float: right;
+    margin-right: 0; }
+  #lbrnEventHeader div.caption {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 48.57143%;
+    float: left;
+    margin-right: 2.85714%;
+    min-height: 100%; }
+  #lbrnEventHeader div.caption h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #2C3D6C; }
+  #lbrnEventHeader div.caption p {
+    font-size: 1.2em;
+    font-family: "Ubuntu", sans-serif;
+    color: #2C3D6C;
+    margin-top: .5em; } }
 @media (min-width: 860px) {
   .lbrn-event-wrapper {
     -moz-box-sizing: border-box;
