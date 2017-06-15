@@ -2,8 +2,9 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i");
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:500,500i,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -40,6 +41,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block; }
 
 @media (min-width: 0) {
+  body p {
+    font-weight: 300; }
+  body h1 {
+    font-weight: 700;
+    font-style: "Open Sans", sans-serif; }
+
+  button {
+    padding: .5em 2em .5em 2em;
+    background-color: #8ECB91;
+    color: #2C3D6C;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 2em;
+    border: none;
+    border-radius: 10px; }
+
+  button:hover {
+    background-color: #2C3D6C;
+    color: white; }
+
   main.layout {
     min-height: 40em; }
 
@@ -137,8 +159,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-bottom: .75em;
     float: left;
     font-size: 3em;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #2C3D6C; }
+
+  main div.content {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    color: #2C3D6C;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2em;
+    padding-bottom: 2em; }
+  main div.content h2 {
+    font-size: 1.5em;
+    margin-top: .5em;
+    font-family: "Open Sans", sans-serif;
+    color: #2C3D6C;
+    line-height: 1.5em;
+    text-transform: uppercase; }
+  main div.content h3 {
+    font-size: 1.25em;
+    margin: .25em 0;
+    margin-top: 1.2em;
+    padding-left: 1em;
+    border-left: 8px solid #8ECB91; }
+  main div.content ul {
+    margin-left: 2.8em; }
+  main div.content li {
+    font-weight: 300;
+    list-style: square; }
+  main div.content .bold {
+    font-weight: 400; }
+  main div.content img {
+    margin: .75em 1em; }
 
   #newsContainer {
     padding-left: 5%;
@@ -164,7 +225,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   .news h2 {
     font-size: 2.5em;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #2C3D6C;
     margin-top: 1em;
     line-height: 0.5em; }
@@ -177,7 +238,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 0;
     margin-right: 0; }
   .news article h3 {
-    margin-top: .75em;
+    margin-top: 1.25em;
     margin-bottom: .25em;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -187,8 +248,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 0;
     margin-right: 0;
     font-family: "Open Sans Condensed", sans-serif;
+    color: #8ECB91;
+    font-weight: 700;
     font-size: 2em;
     line-height: 1.25em; }
+  .news article h3:hover {
+    color: #6bbb6f; }
   .news article .summary {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -202,7 +267,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     line-height: 1.2em;
     font-family: "Ubuntu", sans-serif;
     color: #2C3D6C; }
-  .news article a {
+  .news article .post-link {
     color: #8ECB91;
     font-size: 1em;
     font-family: "Ubuntu", sans-serif;
@@ -211,8 +276,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-bottom: 1em;
     text-align: right;
     text-decoration: none; }
-  .news article a:hover {
+  .news article .post-link:hover {
     color: #3d8340; }
+  .news article .post-date {
+    font-weight: 700;
+    margin-top: 1.5em;
+    font-family: "Ubuntu", sans-serif;
+    color: #2C3D6C;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  .news article .post-date:before {
+    content: ""; }
   .news .view-all {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -227,7 +306,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-bottom: .5em; }
   .news .view-all a {
     text-align: center;
-    padding: 0; }
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    text-decoration: none; }
+  .news .view-all a:hover {
+    color: #8ECB91; }
 
   #newsSidebar {
     display: none; }
@@ -255,7 +339,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background-color: #8ECB91; }
   .events h2 {
     font-size: 2.5em;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #2C3D6C;
     margin: 1em 0;
     text-align: center;
@@ -348,6 +432,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 2.1em;
     line-height: 1.2em;
     color: #2C3D6C;
+    font-weight: 700;
     font-family: "Open Sans Condensed", sans-serif; }
   .lbrn-event-wrapper section p {
     -moz-box-sizing: border-box;
@@ -378,6 +463,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .lbrn-event-wrapper section p.more:hover {
     color: #4a66b4; }
 
+  #lbrnEventHeader {
+    background-color: #d4ebd5;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
   #lbrnEventHeader img {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -396,13 +490,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background-color: #8ECB91;
     padding-left: 5%;
-    padding-right: 5%;
     padding-top: 1.5em;
     padding-bottom: 2em; }
   #lbrnEventHeader div.caption h1 {
-    font-size: 3em;
+    font-size: 2.4em;
     line-height: 1.2em;
     font-family: "Open Sans Condensed", sans-serif;
     color: #2C3D6C; }
@@ -411,6 +503,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-family: "Ubuntu", sans-serif;
     color: #2C3D6C;
     margin-top: .5em; }
+  #lbrnEventHeader div.caption #date {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1em; }
+  #lbrnEventHeader div.caption button {
+    margin-top: 1em;
+    width: 95%; }
 
   footer {
     -moz-box-sizing: border-box;
@@ -462,7 +562,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: 8em; }
   header h1 {
     color: white;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 2em;
     display: block;
@@ -509,7 +609,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     box-sizing: border-box;
     width: 74.28571%;
     float: left;
-    margin-right: 2.85714%; }
+    margin-right: 2.85714%;
+    padding-right: 0; }
 
   .news article.spacers {
     -moz-box-sizing: border-box;
@@ -546,7 +647,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 65.71429%;
     float: right;
     margin-right: 0; }
-  .news article a {
+  .news article .post-link {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 65.71429%;
+    float: right;
+    margin-right: 0; }
+  .news article .post-date {
+    margin-bottom: .5em;
+    margin-top: 0;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -634,8 +744,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: right;
     margin-right: 0; }
 
-  #lbrnEventHeader {
-    background-color: #8ECB91; }
   #lbrnEventHeader img {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -652,7 +760,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 2.85714%;
     min-height: 100%; }
   #lbrnEventHeader div.caption h1 {
-    font-size: 3em;
+    font-size: 2.4em;
     line-height: 1.2em;
     font-family: "Open Sans Condensed", sans-serif;
     color: #2C3D6C; }
@@ -693,14 +801,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     box-sizing: border-box;
     width: 31.42857%;
     float: right;
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  .caption h1 {
+    margin-top: 1.3em; }
+  .caption p {
+    line-height: 1.6em; } }
 @media (min-width: 1224px) {
   .layout {
     margin: 0;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    max-width: 80%;
+    max-width: 85%;
     margin-left: auto;
     margin-right: auto;
     padding: 0; }
@@ -709,13 +822,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: block;
     clear: both; }
 
+  main div.content {
+    padding-left: 0;
+    padding-right: 0; }
+
   header {
     padding: 0; }
   header .layout {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    max-width: 80%;
+    max-width: 85%;
     margin-left: auto;
     margin-right: auto; }
   header .layout:after {
@@ -724,6 +841,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     clear: both; }
   header h1 {
     font-size: 2.5em; }
+
+  #newsPageContainer {
+    padding-right: 0; }
 
   .lbrn-event-wrapper {
     margin: 0;

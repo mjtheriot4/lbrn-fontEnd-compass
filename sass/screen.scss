@@ -10,11 +10,36 @@
 @import "breakpoint";
 
 //fonts
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:500,500i,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 
-
+//generalized styles------------------------------------------
 @include susy-breakpoint($small, $susySmall) {
+  body {
+    p{
+      font-weight: 300;
+    }
+    h1 {
+      font-weight: 700;
+      font-style: $openFont;
+    }
+  }
+  button {
+    padding: .5em 2em .5em 2em;
+    background-color: $secondary;
+    color: $primary;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: $bodyFont;
+    margin-top: 2em;
+    border: none;
+    border-radius: 10px;
+  }
+  button:hover {
+    background-color: $primary;
+    color: white;
+  }
   main.layout {
     min-height: 40em;
   }
@@ -41,6 +66,7 @@
     }
     h1 {
       display: none;
+
     }
   }
   nav {
@@ -82,8 +108,47 @@
      margin-bottom: .75em;
      float: left;
      font-size: 3em;
-     font-family: $bodyFont;
+     font-family: $openFont;
      color: $primary;
+    }
+  }
+  main div.content{
+    @include span(full);
+    font-family: $bodyFont;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    color: $primary;
+    @include pad(5%);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    h2 {
+      font-size: 1.5em;
+      margin-top: .5em;
+      font-family: $openFont;
+      color: $primary;
+      // color: $secondary;
+      line-height: 1.5em;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-size: 1.25em;
+      margin: .25em 0;
+      margin-top: 1.2em;
+      padding-left: 1em;
+      border-left: 8px solid $secondary;
+    }
+    ul {
+      margin-left: 2.8em;
+    }
+    li {
+      font-weight: 300;
+      list-style: square;
+    }
+    .bold {
+      font-weight: 400;
+    }
+    img {
+      margin: .75em 1em;
     }
   }
   //News Styles ------------>
@@ -98,7 +163,7 @@
   .news {
     h2 {
       font-size: 2.5em;
-      font-family: $bodyFont;
+      font-family: $openFont;
       color: $primary;
       margin-top: 1em;
       line-height: .5em
@@ -109,13 +174,18 @@
         @include span(full);
       }
       h3 {
-        margin-top: .75em;
+        margin-top: 1.25em;
         margin-bottom: .25em;
         @include span (full);
         font-family: $titleFont;
+        color: $secondary;
+        font-weight: 700;
         font-size: 2em;
         line-height: 1.25em;
 
+      }
+      h3:hover {
+        color: darken($secondary, 10%);
       }
       .summary {
         @include span(full);
@@ -125,7 +195,7 @@
         font-family: $bodyFont;
         color: $primary;
       }
-      a {
+      .post-link {
         color: $secondary;
         font-size: 1em;
         font-family: $bodyFont;
@@ -136,8 +206,18 @@
         text-decoration: none;
         //@include clearfix;
       }
-      a:hover {
+      .post-link:hover {
         color: darken($secondary, 30%);
+      }
+      .post-date {
+        font-weight: 700;
+        margin-top: 1.5em;
+        font-family: $bodyFont;
+        color: $primary;
+        @include span(full);
+      }
+      .post-date:before {
+        content: ""
       }
     }
     .view-all {
@@ -149,6 +229,12 @@
       a {
         text-align: center;
         padding: 0;
+        font-family: $bodyFont;
+        color: white;
+        text-decoration: none;
+      }
+      a:hover{
+        color: $secondary;
       }
     }
   }
@@ -166,7 +252,7 @@
     background-color: $secondary;
     h2 {
       font-size: 2.5em;
-      font-family: $bodyFont;
+      font-family: $openFont;
       color: $primary;
       margin: 1em 0;
       text-align: center;
@@ -244,6 +330,7 @@
         font-size: 2.1em;
         line-height: 1.2em;
         color: $primary;
+        font-weight: 700;
         font-family: $titleFont;
       }
       p {
@@ -269,6 +356,8 @@
     }
   }
   #lbrnEventHeader {
+    background-color: lighten($secondary, 20%);
+    @include span(full);
     img {
       @include span(full);
       width: 100%;
@@ -276,12 +365,14 @@
     }
     div.caption{
       @include span(full);
-      background-color: $secondary;
-      @include pad(5%);
+      padding-left: 5%;
       padding-top: 1.5em;
       padding-bottom: 2em;
+      // .post{
+      //   text-align: center;
+      // }
       h1 {
-        font-size: 3em;
+        font-size: 2.4em;
         line-height: 1.2em;
         font-family: $titleFont;
         color: $primary;
@@ -291,6 +382,16 @@
         font-family: $bodyFont;
         color: $primary;
         margin-top: .5em;
+      }
+      #date {
+        font-family: $openFont;
+        font-weight: 300;
+        font-size: 1.25em;
+        line-height: 1em;
+      }
+      button {
+        margin-top: 1em;
+        width: 95%;
       }
     }
   }
@@ -342,7 +443,7 @@
     }
     h1 {
       color: white;
-      font-family: $titleFont;
+      font-family: $openFont;
       font-weight: 700;
       font-size: 2em;
       display: block;
@@ -389,6 +490,7 @@
   }
   #newsPageContainer{
     @include span(9);
+    padding-right: 0;
   }
   .news {
     article {
@@ -410,7 +512,12 @@
         margin-top: 0;
         @include span(last 8);
       }
-      a {
+      .post-link {
+        @include span(last 8);
+      }
+      .post-date {
+        margin-bottom: .5em;
+        margin-top: 0;
         @include span(last 8);
       }
     }
@@ -477,7 +584,6 @@
     }
   }
   #lbrnEventHeader {
-    background-color: $secondary;
     img {
       @include span(last 6);
     }
@@ -485,7 +591,7 @@
       @include span(6);
       min-height: 100%;
       h1 {
-        font-size: 3em;
+        font-size: 2.4em;
         line-height: 1.2em;
         font-family: $titleFont;
         color: $primary;
@@ -516,22 +622,37 @@
       @include span(last 4);
     }
   }
+  .caption {
+    h1 {
+      margin-top: 1.3em;
+    }
+    p {
+      line-height: 1.6em;
+    }
+  }
 }// Intermediate Query ------------------------------------
 @include breakpoint($large) {
   // Main Styles!!
   .layout {
     margin: 0;
-    @include container(80%);
+    @include container(85%);
     padding: 0;
+  }
+  main div.content{
+    padding-left: 0;
+    padding-right: 0;
   }
   header {
     padding: 0;
     .layout {
-      @include container(80%);
+      @include container(85%);
     }
     h1 {
       font-size: 2.5em;
     }
+  }
+  #newsPageContainer {
+    padding-right: 0;
   }
   .lbrn-event-wrapper {
     margin: 0;
