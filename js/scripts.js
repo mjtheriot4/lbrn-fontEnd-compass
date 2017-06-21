@@ -18,5 +18,14 @@ $( document ).ready(function() {
       $('nav').css('display','block');
     }
     else {$('nav').css('display','none')}
+    var contentHeight = $('div.content').css('height');
+    $('aside.lbrn-eventsidebar').css('height') = contentHeight;
   });
+  $('.collapseTrigger').click(function() {
+    console.log('fired');
+    $(this).siblings('.collapse').toggleClass('expand');
+    $(this).toggleClass('fa-chevron-right').toggleClass('fa-chevron-down');
+  });
+  var contentHeight = $('div.content').css('height');
+  // $('aside.lbrn-eventsidebar').css('height') = contentHeight;
 });

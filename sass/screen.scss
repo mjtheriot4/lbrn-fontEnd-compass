@@ -112,6 +112,18 @@
      color: $primary;
     }
   }
+  .content {
+    ul {
+      margin-left: 2.8em;
+    }
+    li {
+      font-weight: 300;
+      list-style: square;
+    }
+    .bold {
+      font-weight: 400;
+    }
+  }
   main div.content{
     @include span(full);
     font-family: $bodyFont;
@@ -136,19 +148,6 @@
       margin-top: 1.2em;
       padding-left: 1em;
       border-left: 8px solid $secondary;
-    }
-    ul {
-      margin-left: 2.8em;
-    }
-    li {
-      font-weight: 300;
-      list-style: square;
-    }
-    .bold {
-      font-weight: 400;
-    }
-    img {
-      margin: .75em 1em;
     }
   }
   //News Styles ------------>
@@ -311,6 +310,7 @@
       color: darken($primary, 30%);
     }
   }
+    //LBRN Events Styles ------------>
   .lbrn-event-wrapper {
     @include span(full);
     margin-bottom: 2%;
@@ -394,6 +394,34 @@
         width: 95%;
       }
     }
+  }
+  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventRegistration, #eventArchiveMedia {
+    position: relative;
+    h2{
+      padding-left: .4em;
+      padding-right: 1.5em;
+    }
+  }
+
+  .collapse {
+    height: 0;
+    overflow: hidden;
+  }
+  .expand {
+    height: inherit;
+    overflow: visible;
+  }
+  .event-section-head {
+    background-color: $secondary;
+  }
+  .collapseTrigger{
+    display: block;
+    position: absolute;
+    top: .1em;
+    right: .1em;
+  }
+  .lbrn-event-sidebar {
+    display: none;
   }
   //Footer Styles ------------>
   footer {
@@ -568,6 +596,7 @@
       }
     }
   }
+  //LBRN Events Styles ------------>
   .lbrn-event-wrapper {
     @include span(90%);
     margin-left: 5%;
@@ -602,6 +631,52 @@
         color: $primary;
         margin-top: .5em;
       }
+    }
+  }
+  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventRegistration, #eventArchiveMedia {
+    @include span(9);
+    overflow: hidden;
+    h2{
+      padding-left: 0;
+      background-color: white;
+    }
+  }
+  .collapseTrigger{
+    color: white;
+  }
+  .collapse {
+    height: inherit;
+  }
+  .lbrn-event-sidebar {
+    display: block;
+    padding: 0;
+    margin: 0;
+    @include span(last 3);
+    background-color: $secondary;
+    height: 3000px;
+    position: relative;
+    ul {
+      @include span(full);
+      position: -webkit-sticky;
+      position: sticky;
+      padding-top: 1em;
+      top: 2em;
+      z-index: 1000;
+      li {
+        @include span(full);
+        list-style: none;
+        margin-bottom: 2em;
+      }
+      a {
+        @include span(full);
+
+        text-decoration: none;
+        color: $primary;
+        text-align: center;
+      }
+    }
+    .active {
+      background-color: lighten($secondary, 15%);
     }
   }
 } // Standard Query ----------------------------------------

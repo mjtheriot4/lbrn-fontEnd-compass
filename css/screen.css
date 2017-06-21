@@ -162,6 +162,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-family: "Open Sans", sans-serif;
     color: #2C3D6C; }
 
+  .content ul {
+    margin-left: 2.8em; }
+  .content li {
+    font-weight: 300;
+    list-style: square; }
+  .content .bold {
+    font-weight: 400; }
+
   main div.content {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -191,15 +199,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-top: 1.2em;
     padding-left: 1em;
     border-left: 8px solid #8ECB91; }
-  main div.content ul {
-    margin-left: 2.8em; }
-  main div.content li {
-    font-weight: 300;
-    list-style: square; }
-  main div.content .bold {
-    font-weight: 400; }
-  main div.content img {
-    margin: .75em 1em; }
 
   #newsContainer {
     padding-left: 5%;
@@ -512,6 +511,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-top: 1em;
     width: 95%; }
 
+  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventRegistration, #eventArchiveMedia {
+    position: relative; }
+  #eventSummary h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
+    padding-left: .4em;
+    padding-right: 1.5em; }
+
+  .collapse {
+    height: 0;
+    overflow: hidden; }
+
+  .expand {
+    height: inherit;
+    overflow: visible; }
+
+  .event-section-head {
+    background-color: #8ECB91; }
+
+  .collapseTrigger {
+    display: block;
+    position: absolute;
+    top: .1em;
+    right: .1em; }
+
+  .lbrn-event-sidebar {
+    display: none; }
+
   footer {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -768,7 +793,75 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 1.2em;
     font-family: "Ubuntu", sans-serif;
     color: #2C3D6C;
-    margin-top: .5em; } }
+    margin-top: .5em; }
+
+  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventRegistration, #eventArchiveMedia {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 74.28571%;
+    float: left;
+    margin-right: 2.85714%;
+    overflow: hidden; }
+  #eventSummary h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
+    padding-left: 0;
+    background-color: white; }
+
+  .collapseTrigger {
+    color: white; }
+
+  .collapse {
+    height: inherit; }
+
+  .lbrn-event-sidebar {
+    display: block;
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 22.85714%;
+    float: right;
+    margin-right: 0;
+    background-color: #8ECB91;
+    height: 3000px;
+    position: relative; }
+  .lbrn-event-sidebar ul {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    padding-top: 1em;
+    top: 2em;
+    z-index: 1000; }
+  .lbrn-event-sidebar ul li {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    list-style: none;
+    margin-bottom: 2em; }
+  .lbrn-event-sidebar ul a {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    text-decoration: none;
+    color: #2C3D6C;
+    text-align: center; }
+  .lbrn-event-sidebar .active {
+    background-color: #c2e3c4; } }
 @media (min-width: 860px) {
   .lbrn-event-wrapper {
     -moz-box-sizing: border-box;
