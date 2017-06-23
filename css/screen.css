@@ -534,7 +534,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: .1em;
     right: .1em; }
 
-  .lbrn-event-sidebar {
+  #lbrnEventSidebar {
     display: none; }
 
   footer {
@@ -795,13 +795,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: #2C3D6C;
     margin-top: .5em; }
 
-  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventRegistration, #eventArchiveMedia {
+  #matchHeight {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 74.28571%;
     float: left;
-    margin-right: 2.85714%;
+    margin-right: 2.85714%; }
+
+  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventRegistration, #eventArchiveMedia {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
     overflow: hidden; }
   #eventSummary h2, #eventWhenAndWhere h2, #eventLodgingAndExpenses h2, #eventParticipants h2, #eventRegistration h2, #eventArchiveMedia h2 {
     padding-left: 0;
@@ -813,7 +822,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .collapse {
     height: inherit; }
 
-  .lbrn-event-sidebar {
+  #lbrnEventSidebar {
     display: block;
     padding: 0;
     margin: 0;
@@ -826,7 +835,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background-color: #8ECB91;
     height: 3000px;
     position: relative; }
-  .lbrn-event-sidebar ul {
+  #lbrnEventSidebar ul {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -839,7 +848,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-top: 1em;
     top: 2em;
     z-index: 1000; }
-  .lbrn-event-sidebar ul li {
+  #lbrnEventSidebar ul li {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -849,7 +858,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 0;
     list-style: none;
     margin-bottom: 2em; }
-  .lbrn-event-sidebar ul a {
+  #lbrnEventSidebar ul a {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -860,7 +869,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-decoration: none;
     color: #2C3D6C;
     text-align: center; }
-  .lbrn-event-sidebar .active {
+  #lbrnEventSidebar .active {
     background-color: #c2e3c4; } }
 @media (min-width: 860px) {
   .lbrn-event-wrapper {

@@ -420,7 +420,7 @@
     top: .1em;
     right: .1em;
   }
-  .lbrn-event-sidebar {
+  #lbrnEventSidebar {
     display: none;
   }
   //Footer Styles ------------>
@@ -633,8 +633,11 @@
       }
     }
   }
-  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventRegistration, #eventArchiveMedia {
+  #matchHeight{
     @include span(9);
+  }
+  #eventSummary, #eventWhenAndWhere, #eventLodgingAndExpenses, #eventParticipants, #eventRegistration, #eventArchiveMedia {
+    @include span(full);
     overflow: hidden;
     h2{
       padding-left: 0;
@@ -647,7 +650,7 @@
   .collapse {
     height: inherit;
   }
-  .lbrn-event-sidebar {
+  #lbrnEventSidebar {
     display: block;
     padding: 0;
     margin: 0;
