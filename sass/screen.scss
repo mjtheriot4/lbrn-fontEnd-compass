@@ -668,7 +668,7 @@
       li {
         @include span(full);
         list-style: none;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
       }
       a {
         @include span(full);
@@ -676,10 +676,12 @@
         text-decoration: none;
         color: $primary;
         text-align: center;
+        text-transform: capitalize;
       }
     }
     .active {
       background-color: lighten($secondary, 15%);
+      font-weight: 400;
     }
   }
 } // Standard Query ----------------------------------------

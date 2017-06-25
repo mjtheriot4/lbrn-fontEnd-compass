@@ -1,7 +1,8 @@
 // Cache selectors
 var lastId,
- topMenu = $("#lbrnEventSidebar"),
+ topMenu = $("#lbrnEventSidebarUl"),
  // topMenuHeight = topMenu.outerHeight()+1,
+ topMenuHeight = -1,
  // All list items
  menuItems = topMenu.find("a"),
  // Anchors corresponding to menu items
@@ -41,6 +42,6 @@ $(window).scroll(function(){
        // Set/remove active class
        menuItems
          .parent().removeClass("active")
-         .end().filter("[href=#"+id+"]").parent().addClass("active");
+         .end().filter("[href='#"+id+"']").parent().addClass("active");
    }
 });

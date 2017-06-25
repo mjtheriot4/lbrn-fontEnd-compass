@@ -857,7 +857,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 0;
     margin-right: 0;
     list-style: none;
-    margin-bottom: 2em; }
+    margin-bottom: 1em; }
   #lbrnEventSidebar ul a {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -868,9 +868,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 0;
     text-decoration: none;
     color: #2C3D6C;
-    text-align: center; }
+    text-align: center;
+    text-transform: capitalize; }
   #lbrnEventSidebar .active {
-    background-color: #c2e3c4; } }
+    background-color: #c2e3c4;
+    font-weight: 400; } }
 @media (min-width: 860px) {
   .lbrn-event-wrapper {
     -moz-box-sizing: border-box;
