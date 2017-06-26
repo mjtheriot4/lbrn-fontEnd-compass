@@ -57,6 +57,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-top: 2em;
     border: none;
     border-radius: 10px; }
+  button a {
+    background-color: inherit;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    width: 100%; }
 
   button:hover {
     background-color: #2C3D6C;
@@ -471,7 +477,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: left;
     margin-left: 0;
     margin-right: 0; }
-  #lbrnEventHeader img {
+  #lbrnEventHeader .imagebox {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -480,7 +486,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 0;
     margin-right: 0;
     width: 100%;
-    height: none; }
+    position: relative;
+    overflow: hidden; }
+  #lbrnEventHeader .imagebox img {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  #lbrnEventHeader .imagebox #quickReference {
+    position: absolute;
+    top: 85%;
+    left: -17px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1em;
+    padding-left: 3em; }
+  #lbrnEventHeader .imagebox #quickReference div {
+    display: block;
+    text-align: center;
+    margin-bottom: 1.5em; }
+  #lbrnEventHeader .imagebox #quickReference p {
+    margin: 1em;
+    margin-top: 2em; }
   #lbrnEventHeader div.caption {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -529,7 +560,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background-color: #8ECB91; }
 
   .collapseTrigger {
-    display: block;
+    display: none;
     position: absolute;
     top: .1em;
     right: .1em; }
@@ -769,7 +800,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     float: right;
     margin-right: 0; }
 
-  #lbrnEventHeader img {
+  #lbrnEventHeader .imagebox {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
